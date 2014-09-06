@@ -18,10 +18,10 @@
 
 INCLUDE = -I.
 
-
 # GCC
-CC = $(PWD)/../../sdk/usr/bin/gcc
-CXX = $(PWD)/../../sdk/usr/bin/g++
+$?FLASCC=$(PWD)/../../sdk
+CC = $(FLASCC)/usr/bin/gcc
+CXX = $(FLASCC)/usr/bin/g++
 
 CFLAGS = 
 CPPFLAGS = $(INCLUDE) -O3
